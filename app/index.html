@@ -5,6 +5,25 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>fe workflow</title>
+    <style type="text/css">
+      /*html,body {
+        background-color: #333;
+        color: #fff;
+        font-family: helvetica, arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 12pt;
+      }
+
+      #canvas {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }*/
+    </style>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -26,7 +45,7 @@
     <![endif]-->
 
     <div class="container">
-
+      <canvas id="canvas"></canvas>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -45,6 +64,9 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+
+    <script type="text/javascript" src="lib/impact/impact.js"></script>
+    <script type="text/javascript" src="lib/game/main.js"></script>
 
     <!-- build:js scripts/index.js -->
     <script src="scripts/index.js"></script>

@@ -15,9 +15,9 @@ paths = (env) ->
       all: "#{root}/styles/**/*.css"
       main: "#{root}/styles/main.css"
   scripts:
-    root: "#{root}/scripts"
-    all: "#{root}/scripts/**/*.coffee"
-    main: "#{root}/scripts/index.coffee"
+    root: "#{root}/lib/game"
+    all: "#{root}/lib/game/**/*.coffee"
+    main: "#{root}/lib/game/index.coffee"
   html:
     all: "#{root}/*.html"
     main: "#{root}/index.html"

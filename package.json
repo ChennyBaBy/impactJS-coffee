@@ -28,6 +28,7 @@
     "setup": "npm install && ./node_modules/.bin/bower install && bundle install",
     "update": "npm install --production --info",
     "update-dev": "npm install",
-    "bundle": "npm prune && npm dedupe && npm shrinkwrap"
+    "bundle": "npm prune && npm dedupe && npm shrinkwrap",
+    "level": "cd app && php -S localhost:9090 & open -a Safari http://localhost:9090/weltmeister.html"
   }
 }

@@ -1,5 +1,5 @@
 ig.module("game.main")
-  .requires("impact.game", "impact.font")
+  .requires("impact.game", "impact.font", "plusplus.core.plusplus")
   .defines ->
     MyGame = ig.Game.extend
       font: new ig.Font "media/04b03.font.png"

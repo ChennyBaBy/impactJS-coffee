@@ -1,8 +1,11 @@
 ig.module("game.main")
-  .requires("impact.game", "impact.font", "plusplus.core.plusplus")
+  .requires(
+    "plusplus.core.plusplus",
+    "game.levels.test"
+    )
   .defines ->
-    MyGame = ig.Game.extend
-      font: new ig.Font "media/04b03.font.png"
+    MyGame = ig.GameExtended.extend
+      font: new ig.Font "media/font2.png"
       init: ->
       update: ->
         @parent()
@@ -12,6 +15,6 @@ ig.module("game.main")
         y = ig.system.height / 2
         @font.draw("it works with coffeescript!", x, y, ig.Font.ALIGN.CENTER)
 
-    ig.main("#canvas", MyGame, 60, 320, 240, 2)
+    ig.main("#canvas", MyGame, 60, 320, 240, 1, ig.LoaderExtended)
 
 console.log "here?"

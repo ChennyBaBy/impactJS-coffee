@@ -7,6 +7,10 @@ ig.module("game.entities.player").requires("plusplus.abstractities.player").defi
         sequence: [0],
         frameTime: 0.1
       }
+    },
+    size: {
+      x: 66,
+      y: 92
     }
   });
 });

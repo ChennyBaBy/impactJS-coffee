@@ -12,4 +12,7 @@ ig.module( "game.entities.player" )
         idleX:
           sequence: [0]
           frameTime: 0.1
+      size:
+        x: 66
+        y: 92
     )

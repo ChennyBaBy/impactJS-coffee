@@ -28,3 +28,11 @@ gulp.task "bundle", ->
     b.on("update", bundle)
 
   bundle()
+
+
+coffee = require "gulp-coffee"
+
+gulp.task "coffee", ->
+  gulp.src "#{config.dev.scripts.all}"
+    .pipe coffee bare: true
+    .pipe gulp.dest "#{config.tmp.scripts.root}"

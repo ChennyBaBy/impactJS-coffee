@@ -1,6 +1,0 @@
-class hey
-  constructor: ->
-    console.log "WHAAA???????"
-
-hey()
-

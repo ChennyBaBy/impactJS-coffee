@@ -1,7 +1,7 @@
 rootPath =
   build: process.env.DIR ? "dist"
   dev: "app"
-  tmp: "tmp"
+  tmp: "app"
 
 paths = (env) ->
   root = rootPath[env]
@@ -15,8 +15,8 @@ paths = (env) ->
       all: "#{root}/styles/**/*.css"
       main: "#{root}/styles/main.css"
   scripts:
-    root: "#{root}/lib/game"
-    all: "#{root}/lib/game/**/*.coffee"
+    root: "#{root}/lib"
+    all: "#{root}/lib/**/*.coffee"
     main: "#{root}/lib/game/index.coffee"
   html:
     all: "#{root}/*.html"
@@ -62,59 +62,3 @@ config =
       verbose: true
 
 module.exports = config
-
-# module.exports =
-#   dev:
-#     root: "#{devDir}"
-#     files:
-#       scss        : "#{devDir}/styles/*.scss"
-#       scssMain    : "#{devDir}/styles/main.scss"
-#       css         : "#{devDir}/styles/**/*.css"
-#       js          : "#{devDir}/scripts/**/*.js"
-#       coffee      : "#{devDir}/scripts/**/*.coffee"
-#       coffeeEntry : "#{devDir}/scripts/main.coffee"
-#       html        : "#{devDir}/*.html"
-#       fonts       : "#{devDir}/**/*.{eot,svg,ttf,woff}"
-#     folders:
-#       scripts : "#{devDir}/scripts"
-#       styles  : "#{devDir}/styles"
-#       image   : "#{devDir}/images/**/*"
-#       fonts   : "#{devDir}/fonts/**/*"
-
-#   preview:
-#     root: "#{previewDir}"
-#     files:
-#       css   : "#{previewDir}/styles/**/*.css"
-#       fonts : "#{previewDir}/styles/fonts/*"
-#       js    : "#{previewDir}/scripts/**/*.js"
-#     folders:
-#       styles  : "#{previewDir}/styles"
-#       fonts   : "#{previewDir}/styles/fonts"
-#       scripts : "#{previewDir}/scripts"
-
-#   build:
-#     root    : "#{buildDir}"
-#     folders:
-#       fonts   : "#{buildDir}/fonts"
-#       image   : "#{buildDir}/images"
-#       scripts : "#{buildDir}/scripts"
-#       styles  : "#{buildDir}/styles"
-
-#   bowerPaths:
-#     bowerDirectory : "#{devDir}/bower_components"
-#     bowerrc        : ".bowerrc"
-#     bowerJson      : "bower.json"
-
-#   rubySassOptions :
-#     style      : "expanded"
-#     precision  : 10
-#     compass    : true
-#     bundleExec : true
-
-#   coffeeOptions :
-#     bare: true
-
-#   imageminOptions :
-#     optimizationLevel : 3
-#     progressive       : true
-#     interlaced        : true

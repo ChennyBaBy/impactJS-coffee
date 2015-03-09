@@ -1,11 +1,11 @@
-ig.module( "game.entities.player" )
+ig.module("game.entities.Character")
   .requires(
-    "plusplus.abstractities.player"
+    "plusplus.abstractities.character"
   )
   .defines ->
-    ig.EntityPlayer = ig.global.EntityPlayer = ig.Player.extend(
+    ig.EntityBot = ig.global.EntityBot = ig.Character.extend(
       animSheet:
-        new ig.AnimationSheet( "media/player.png", 32, 32)
+        new ig.AnimationSheet( "media/bot.png", 32, 32)
       animInit:
         "idleX"
       animSettings:
